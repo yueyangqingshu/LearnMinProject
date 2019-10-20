@@ -1,2 +1,4 @@
 <!--pages/about/about.wxml-->
 <text class='title'>pages/about/about.wxml</text>
+<view>哈哈哈about的.wxml</view>
+<view>关于第二次测试的</view>
