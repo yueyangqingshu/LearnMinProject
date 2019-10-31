@@ -1,39 +1,17 @@
-// pages/home/home.js
-const app=getApp()
-const age = app.gloabalData.age;
-console.log(age)
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name:'Codewhy',
-    age: 18,
-    students:[
-      {id:100,name:'zhangsan',age:12},
-      {id:222,name:'wangwu',age:22},
-      {id:300,name:'tongtong',age:18}
 
-    ],
-    counter:0
-  },
-  handleBtnClick(){
-    this.setData({
-
-      counter: this.data.counter +1
-    })
-
-  },
-  handleBtnGetUserClick(event){
-    console.log(event)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('页面加载的方法')
 
   },
 
@@ -85,5 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
 })

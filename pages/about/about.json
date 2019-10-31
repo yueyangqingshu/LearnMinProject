@@ -1,3 +1,9 @@
-{
-  "usingComponents": {}
+{ 
+  "usingComponents": {},
+
+
+    
+  "navigationBarTitleText": "商品关于小程序"
+  
+  
 }

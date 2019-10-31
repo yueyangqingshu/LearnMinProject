@@ -1,2 +1,17 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<!--1.小数据的绑定 Mustache -->
+<view>Hello {{name}}</view>
+<view>张三今年{{age}}</view>
+<!-- 2.列表的展示功能:wx:for循环 -->
+ <view wx:for="{{students}}">{{item.age}}</view>
+<!-- 事件监听改变data -->
+<view>当前计数:{{counter}}</view>
+<button size='mini' bindtap="handleBtnClick">+</button>
+
+<!-- 2:获取用户信息的方式绑定按钮获取userinfo的信息 -->
+<button size='mini' open-type='getUserInfo' bindgetuserinfo='handleBtnGetUserClick'>获取授权</button>
+<!-- 3:展示用户的信息 -->
+<open-data type="userNickName">用户昵称</open-data>
+<open-data type="userAvatarUrl">用户头像</open-data>  
+<open-data type="userGender">用户性别</open-data>

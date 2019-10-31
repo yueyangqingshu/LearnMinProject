@@ -1,8 +1,32 @@
 {
   "pages": [
-    "pages/about/about",
-    "pages/home/home"
-    
-    
-  ]
+    "pages/home/home",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "俺的小程序",
+    "backgroundColor": "red",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "家",
+        "iconPath": "assels/tabBar/home.png",
+        "selectedIconPath": "assels/tabBar/home.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "个人用户",
+        "iconPath": "assels/tabBar/user.png",
+        "selectedIconPath": "assels/tabBar/user.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }
