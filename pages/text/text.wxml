@@ -1,0 +1,15 @@
+<!--pages/text/text.wxml-->
+<!-- 1.基本使用 -->
+<text> Hello Word\n</text>
+<text>你好小程序\n</text>
+
+<!--2.默认情况下text中的文本是不能被选中的 需要设置属性selectable:true  -->
+<text selectable="{{true}}">加入selecttable:true\n</text>
+<text selectable>加入selecttable:true2\n</text>
+
+<!--3. space决定空格的大小 -->
+<!-- ensp:半个中文的大小 emsp:一个中文的大小 nbsp:默认的 -->
+
+<!--4: decode属性 是否解码文本 &gt是大于的编码 -->
+<text decode>5 &gt;4</text>
+

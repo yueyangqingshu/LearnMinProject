@@ -1,0 +1,15 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button的基本使用 -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<!-- plain 镂空效果 -->
+<button size="mini" type="warn" plain>按钮</button>
+<!-- disable 不可用 loading 按钮的加载中 -->
+<!-- hover-class -->
+<button hover-class='pressed'>按钮</button>
+<!--ope-type的取值  -->
+<view>  
+<button size='mini' open-type='contact' bindcontact='onContact'>客服会话</button>
+<button size="mini" open-type='Share'>程序分享</button>
+<button size="mini" open-type='getPhoneNumber' bindgetphonenumber='onGetUserInfo'>用户信息</button>
+</view>
