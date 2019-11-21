@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    titles:['衣服','裤子','帽子'],
+    count:0
   },
 
   /**
@@ -62,5 +63,46 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handleEventClick:function(event){
+    console.log(event);
+  },
+  handleItemClick:function(event){
+console.log(event);
+
+  },
+  handleCaptureView1:function(){
+    console.log("handleCaptureView1");
+  },
+  handleCaptureView2: function () {
+    console.log("handleCaptureView2");
+  },
+    handleCaptureView3: function () {
+    console.log("handleCaptureView3");
+  },
+  handleBindView1:function(){
+    console.log("handleBindView1")
+  },
+  handleBindView2: function () {
+    console.log("handleBindView2")
+  },
+  handleBindView3: function () {
+    console.log("handleBindView3")
+  },
+  handleIncrement:function(event){
+
+    console.log(event);
+    this.setData({
+      count:this.data.count+1
+    })
+  },
+  handtabControClick:function(event){
+    console.log(event);
+  },
+  updateComData :function(){
+    const my_sel=this.selectComponent('.sel-class')
+    console.log(my_sel);
+    my_sel.setDataFunction(10)
   }
+  
 })

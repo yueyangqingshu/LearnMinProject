@@ -1,0 +1,4 @@
+
+<view>这是参数的头部</view>
+<slot/>
+<view>这是参数的尾部</view>

@@ -1,0 +1,4 @@
+<button size="mini"bind:tap="bindClick">
++1
+
+</button>

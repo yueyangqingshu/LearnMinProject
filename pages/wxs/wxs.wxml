@@ -1,0 +1,5 @@
+<!-- wxs的应用 -->
+<view>的撒大</view>
+<wxs src="../../wxs/formart.wxs" module="format"/>
+<view>{{format.priceFormart(price,3)}}</view>
+ <view>{{format.dateFormat(time)}}</view>

@@ -1,0 +1,6 @@
+
+<view>这是mslot的头</view>
+<view><slot name="slot1"/></view>
+<view><slot name="slot2"/></view>
+<view><slot name="slot3"/></view>
+<view>这是mslot的尾部</view>

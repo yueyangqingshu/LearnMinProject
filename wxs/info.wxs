@@ -1,0 +1,21 @@
+var message ="hello Word";
+var name ="cpderwhy";
+
+function sum(num1,num2){
+
+  return num1+num2
+}
+
+
+function test(){
+  return "test function"
+}
+
+//commonjs的模块导出的方法
+module.exports = {
+  message: message,
+  name: name,
+  sum: sum,
+  test: test
+  
+}

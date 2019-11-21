@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-cpn": "/commponents/my-cpn/my-cap",
+    "my-prop": "/commponents/my-prop/my-prop",
+    "my-event": "/commponents/my-event/my-event",
+    "w-tab-control": "/commponents/w-tab-control/w-tab-control",
+    "my-sel": "/commponents/my-sel/my-sel",
+      "my-slot": "/commponents/my-slot/slot",
+      "my-mslot":"/commponents/my-mslot/my-mslot"
+  }
 }

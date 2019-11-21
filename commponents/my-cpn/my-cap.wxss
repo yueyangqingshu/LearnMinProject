@@ -1,0 +1,7 @@
+.view1{
+  font-size: 30rpx;
+}
+.cont{
+  font-size: 50rpx;
+  background: red;
+}

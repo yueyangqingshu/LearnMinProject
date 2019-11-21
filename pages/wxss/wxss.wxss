@@ -1,0 +1,9 @@
+@import "./style/weui-searchbar.wxss";
+.box{
+
+  color: blue;
+  font-size: 32px;
+}
+.active{
+  color: red;
+}

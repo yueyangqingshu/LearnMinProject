@@ -1,8 +1,17 @@
 {
   "pages": [
+    "pages/home/home",
+    "pages/request/request",
+    "pages/event/event",
+    "pages/wxs/wxs",
+    "pages/audio/audio",
+    "pages/wxml/wxml",
+    "pages/wxss/wxss",
+    "pages/camera/camera",
+    "pages/input/input",
+    "pages/view/view",
     "pages/about/about",
-    "pages/home/home"
-    
-    
-  ]
+    "commponents/my-cpn/my-cap"
+  ],
+  "sitemapLocation": "sitemap.json"
 }

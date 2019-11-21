@@ -1,2 +1,59 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+
+<button id='btn' size='mini' bindtap='handleEventClick'>事件对象</button>  
+     <!--事件的传递  -->
+     <view>
+     <block wx:for="{{titles}}" wx:key="{{index}}">
+      <view bindtap='handleItemClick' data-item="{{item}}" data-index='{{index}}'>{{item}}</view>
+     
+     </block>
+     </view>
+     <!-- 事件的冒泡 和事件的捕获 -->
+     <!-- bind 一层一层的传递 -->
+     <!-- catch 阻止事件的进一步传递 -->
+     <view class="view1" capture-bind:tap="handleCaptureView1" bindtap='handleBindView1'>
+     <view class="view2" capture-bind:tap="handleCaptureView2" bindtap='handleBindView2'>
+     <view class="view3" capture-bind:tap="handleCaptureView3" bindtap='handleBindView3'></view>
+     </view>
+     
+     </view>
+     <my-cpn></my-cpn>
+
+
+     <my-prop title="hhhh" titleclass="red"/>
+        <my-prop title="title2" titleclass="green"/>
+           <my-prop title="title3" titleclass="blue" titleclass2="red"/>
+           <my-prop/>
+           <!-- 33333333333333 -->
+           <view>{{count}}</view>
+
+           <my-event bind:increment="handleIncrement"/>
+
+           <!-- 5.tab-control练习 -->
+           <w-tab-control titles="{{['衣服','裤子','鞋子']}}" bind:itemclick="handtabControClick"/>
+
+           <!-- 6。直接选中组件修改组件的数据和方法 -->
+           <my-sel class="sel-class"/>
+           <button size="mini" bind:tap="updateComData">修改按钮</button>
+
+           <!-- 7.单个插槽的使用 -->
+           <my-slot>
+        <button>22</button>
+           </my-slot>
+
+               <my-slot>
+       <text>222321</text>
+           </my-slot>
+
+             <my-slot>
+    <slider value="20"></slider>
+           </my-slot>
+
+           <!-- 7.2多个插槽的使用 -->
+
+           <my-mslot>
+
+           <button size='mini' slot="slot2">这是一个slot2的按钮</button>
+           <slider value="100" slot="slot1"></slider>
+</my-mslot>
+                                                                                                                                    
